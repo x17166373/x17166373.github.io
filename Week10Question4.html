@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>Week 10 Question 4</title>
+<body>
+<p>Create a preset array of numbers. Create a piece of code that chooses the largest number from that array.</p>
+<p>My array is [ -1, 0, 25, 73, 17, 8, 63]. Click the button below to choose the max number from this array.</p>
+<button id="max" value="max" onclick="max()">Click me!</button>
+<script>
+function max(){
+    let numbers=[-1,0,25,73,17,8,63];
+    var maxNumber = numbers[0];
+
+    for (var i = 0; i < numbers.length; i++) {
+        if(maxNumber<numbers[i]){
+            maxNumber=numbers[i];
+        }
+    }
+    alert(maxNumber + ' is the largest number in this array.');
+}
+</script>
+</body>
+</html>
